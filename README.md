@@ -16,13 +16,13 @@ Requirements
 
 M-lab data
 
-create a virtualenv
+create a virtualenv::
 
-    `virtualenv env
-    source env/bin/activate `
+    virtualenv env
+    source env/bin/activate 
 
-Now install the requirements
+Now install the requirements::
 
-    `pip install -r requirements.txt`
+    pip install -r requirements.txt
 
 go ahead and play with glasnost.py
