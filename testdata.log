@@ -1,0 +1,685 @@
+1345338742832 Client 74-126-227-170.championbroadband.com 74.126.227.170 connected (port 58450)
+1345338742914 Saving trace to logs/glasnost_74.126.227.170_74-126-227-170.championbroadband.com_1345338742.dump
+1345338742929 Received: replay BitTorrent as client on port 6881 for 21 seconds.
+1345338742949 Enabled TCP_NODELAY option for socket
+1345338742949 Running BitTorrent as client on port 6881 .
+1345338742949 Replaying BitTorrent for 21 seconds
+1345338742949 Executing command 0 of 10
+1345338742949 Sending 68 bytes
+1345338742949 Executing command 1 of 10
+1345338742949 Receiving 68 bytes
+1345338743042 Executing command 2 of 10
+1345338743042 Sending 166 bytes
+1345338743042 Executing command 3 of 10
+1345338743042 Receiving 166 bytes
+1345338743067 Executing command 4 of 10
+1345338743067 Sending 5 bytes
+1345338743067 Executing command 5 of 10
+1345338743067 Receiving 5 bytes
+1345338743077 Executing command 6 of 10
+1345338743077 Start measuring command
+1345338743077 Executing command 7 of 10
+1345338743077 Sending 17 bytes
+1345338743077 Executing command 8 of 10
+1345338743077 Receiving 12500013 bytes
+1345338763949 Time is up, ending (select() timed out)
+1345338763949 readPacket did not read all bytes (1813320/12500013)
+1345338763949 End of transfer; 17 bytes transferred and 1813320 bytes received
+1345338764949 Resets received: 0 ; Resets sent: 0
+1345338764950 Transmitted 17 bytes and received 1813320 bytes in 20.873 seconds: 7 695006 bps (state=8)
+1345338764950 Client: Transferred 12500013 bytes and received 17 bytes in 19.874 seconds: 5031704.941129114 6.843111603099527 bps (state=7)
+1345338764950 Received: replay BitTorrent as client on port 6881 for 21 seconds as a control flow.
+1345338765814 Enabled TCP_NODELAY option for socket
+1345338765814 Running control flow of BitTorrent as client on port 6881 .
+1345338765814 Replaying BitTorrent for 21 seconds
+1345338765814 Executing command 0 of 10
+1345338765814 Sending 68 bytes
+1345338765814 Executing command 1 of 10
+1345338765814 Receiving 68 bytes
+1345338765846 Executing command 2 of 10
+1345338765846 Sending 166 bytes
+1345338765846 Executing command 3 of 10
+1345338765846 Receiving 166 bytes
+1345338765859 Executing command 4 of 10
+1345338765859 Sending 5 bytes
+1345338765859 Executing command 5 of 10
+1345338765859 Receiving 5 bytes
+1345338765868 Executing command 6 of 10
+1345338765868 Start measuring command
+1345338765868 Executing command 7 of 10
+1345338765868 Sending 17 bytes
+1345338765868 Executing command 8 of 10
+1345338765868 Receiving 12500013 bytes
+1345338786813 Time is up, ending (select() timed out)
+1345338786813 readPacket did not read all bytes (2445500/12500013)
+1345338786813 End of transfer; 17 bytes transferred and 2445500 bytes received
+1345338787813 Resets received: 0 ; Resets sent: 0
+1345338787813 Transmitted 17 bytes and received 2445500 bytes in 20.945 seconds: 6 934055 bps (state=8)
+1345338787813 Client: Transferred 12500013 bytes and received 17 bytes in 19.944 seconds: 5014044.5246690735 6.81909346169274 bps (state=7)
+1345338788383 Received: replay BitTorrent as client on port 6881 for 21 seconds.
+1345338789383 Enabled TCP_NODELAY option for socket
+1345338789383 Running BitTorrent as client on port 6881 .
+1345338789383 Replaying BitTorrent for 21 seconds
+1345338789383 Executing command 0 of 10
+1345338789383 Sending 68 bytes
+1345338789383 Executing command 1 of 10
+1345338789383 Receiving 68 bytes
+1345338789437 Executing command 2 of 10
+1345338789437 Sending 166 bytes
+1345338789437 Executing command 3 of 10
+1345338789437 Receiving 166 bytes
+1345338789453 Executing command 4 of 10
+1345338789453 Sending 5 bytes
+1345338789453 Executing command 5 of 10
+1345338789453 Receiving 5 bytes
+1345338789462 Executing command 6 of 10
+1345338789462 Start measuring command
+1345338789462 Executing command 7 of 10
+1345338789462 Sending 17 bytes
+1345338789462 Executing command 8 of 10
+1345338789462 Receiving 12500013 bytes
+1345338810384 Time is up, ending (select() timed out)
+1345338810384 readPacket did not read all bytes (2420680/12500013)
+1345338810384 End of transfer; 17 bytes transferred and 2420680 bytes received
+1345338811385 Resets received: 0 ; Resets sent: 0
+1345338811385 Transmitted 17 bytes and received 2420680 bytes in 20.921 seconds: 7 925630 bps (state=8)
+1345338811385 Client: Transferred 12500013 bytes and received 17 bytes in 19.921 seconds: 5019833.542492847 6.8269665177450936 bps (state=7)
+1345338812425 Received: replay BitTorrent as client on port 6881 for 21 seconds as a control flow.
+1345338812992 Enabled TCP_NODELAY option for socket
+1345338812992 Running control flow of BitTorrent as client on port 6881 .
+1345338812992 Replaying BitTorrent for 21 seconds
+1345338812992 Executing command 0 of 10
+1345338812992 Sending 68 bytes
+1345338812992 Executing command 1 of 10
+1345338812992 Receiving 68 bytes
+1345338813034 Executing command 2 of 10
+1345338813034 Sending 166 bytes
+1345338813034 Executing command 3 of 10
+1345338813034 Receiving 166 bytes
+1345338813053 Executing command 4 of 10
+1345338813053 Sending 5 bytes
+1345338813053 Executing command 5 of 10
+1345338813053 Receiving 5 bytes
+1345338813072 Executing command 6 of 10
+1345338813072 Start measuring command
+1345338813072 Executing command 7 of 10
+1345338813073 Sending 17 bytes
+1345338813073 Executing command 8 of 10
+1345338813073 Receiving 12500013 bytes
+1345338833992 Time is up, ending (select() timed out)
+1345338833992 readPacket did not read all bytes (2427980/12500013)
+1345338833992 End of transfer; 17 bytes transferred and 2427980 bytes received
+1345338834992 Resets received: 0 ; Resets sent: 0
+1345338834993 Transmitted 17 bytes and received 2427980 bytes in 20.920 seconds: 7 928492 bps (state=8)
+1345338834993 Client: Transferred 12500013 bytes and received 17 bytes in 19.93 seconds: 5017566.683391872 6.823883592574009 bps (state=7)
+1345338834993 Received: replay BitTorrent as client on port 6881 for 21 seconds.
+1345338835870 Enabled TCP_NODELAY option for socket
+1345338835870 Running BitTorrent as client on port 6881 .
+1345338835870 Replaying BitTorrent for 21 seconds
+1345338835870 Executing command 0 of 10
+1345338835870 Sending 68 bytes
+1345338835870 Executing command 1 of 10
+1345338835870 Receiving 68 bytes
+1345338835928 Executing command 2 of 10
+1345338835928 Sending 166 bytes
+1345338835928 Executing command 3 of 10
+1345338835928 Receiving 166 bytes
+1345338835938 Executing command 4 of 10
+1345338835938 Sending 5 bytes
+1345338835938 Executing command 5 of 10
+1345338835938 Receiving 5 bytes
+1345338835949 Executing command 6 of 10
+1345338835949 Start measuring command
+1345338835949 Executing command 7 of 10
+1345338835949 Sending 17 bytes
+1345338835949 Executing command 8 of 10
+1345338835949 Receiving 12500013 bytes
+1345338856870 Time is up, ending (select() timed out)
+1345338856870 readPacket did not read all bytes (1765140/12500013)
+1345338856870 End of transfer; 17 bytes transferred and 1765140 bytes received
+1345338857870 Resets received: 0 ; Resets sent: 0
+1345338857870 Transmitted 17 bytes and received 1765140 bytes in 20.921 seconds: 7 674989 bps (state=8)
+1345338857870 Client: Transferred 12500013 bytes and received 17 bytes in 19.924 seconds: 5019077.69524192 6.825938566552901 bps (state=7)
+1345338858789 Received: replay BitTorrent as client on port 6881 for 21 seconds as a control flow.
+1345338858830 Enabled TCP_NODELAY option for socket
+1345338858830 Running control flow of BitTorrent as client on port 6881 .
+1345338858830 Replaying BitTorrent for 21 seconds
+1345338858830 Executing command 0 of 10
+1345338858830 Sending 68 bytes
+1345338858830 Executing command 1 of 10
+1345338858830 Receiving 68 bytes
+1345338858872 Executing command 2 of 10
+1345338858872 Sending 166 bytes
+1345338858872 Executing command 3 of 10
+1345338858872 Receiving 166 bytes
+1345338858908 Executing command 4 of 10
+1345338858908 Sending 5 bytes
+1345338858908 Executing command 5 of 10
+1345338858908 Receiving 5 bytes
+1345338858927 Executing command 6 of 10
+1345338858927 Start measuring command
+1345338858927 Executing command 7 of 10
+1345338858927 Sending 17 bytes
+1345338858927 Executing command 8 of 10
+1345338858927 Receiving 12500013 bytes
+1345338879829 Time is up, ending (select() timed out)
+1345338879829 readPacket did not read all bytes (1987060/12500013)
+1345338879829 End of transfer; 17 bytes transferred and 1987060 bytes received
+1345338880829 Resets received: 0 ; Resets sent: 0
+1345338880830 Transmitted 17 bytes and received 1987060 bytes in 20.903 seconds: 7 760495 bps (state=8)
+1345338880830 Client: Transferred 12500013 bytes and received 17 bytes in 19.905 seconds: 5023868.57573474 6.832454157246922 bps (state=7)
+1345338880830 Received: replay BitTorrent as client on port 0 for 21 seconds.
+1345338880830 Telling the client to use port 50806.
+1345338881714 Enabled TCP_NODELAY option for socket
+1345338881714 Running BitTorrent as client on port 50806 .
+1345338881714 Replaying BitTorrent for 21 seconds
+1345338881714 Executing command 0 of 10
+1345338881714 Sending 68 bytes
+1345338881714 Executing command 1 of 10
+1345338881714 Receiving 68 bytes
+1345338881750 Executing command 2 of 10
+1345338881750 Sending 166 bytes
+1345338881750 Executing command 3 of 10
+1345338881750 Receiving 166 bytes
+1345338881763 Executing command 4 of 10
+1345338881763 Sending 5 bytes
+1345338881763 Executing command 5 of 10
+1345338881763 Receiving 5 bytes
+1345338881778 Executing command 6 of 10
+1345338881778 Start measuring command
+1345338881778 Executing command 7 of 10
+1345338881778 Sending 17 bytes
+1345338881778 Executing command 8 of 10
+1345338881778 Receiving 12500013 bytes
+1345338902714 Time is up, ending (select() timed out)
+1345338902714 readPacket did not read all bytes (2236720/12500013)
+1345338902714 End of transfer; 17 bytes transferred and 2236720 bytes received
+1345338903714 Resets received: 0 ; Resets sent: 0
+1345338903714 Transmitted 17 bytes and received 2236720 bytes in 20.936 seconds: 6 854699 bps (state=8)
+1345338903714 Client: Transferred 12500013 bytes and received 17 bytes in 19.939 seconds: 5015301.870705652 6.820803450524099 bps (state=7)
+1345338903714 Received: replay BitTorrent as client on port 50806 for 21 seconds as a control flow.
+1345338904598 Enabled TCP_NODELAY option for socket
+1345338904598 Running control flow of BitTorrent as client on port 50806 .
+1345338904598 Replaying BitTorrent for 21 seconds
+1345338904598 Executing command 0 of 10
+1345338904598 Sending 68 bytes
+1345338904598 Executing command 1 of 10
+1345338904598 Receiving 68 bytes
+1345338904662 Executing command 2 of 10
+1345338904662 Sending 166 bytes
+1345338904662 Executing command 3 of 10
+1345338904662 Receiving 166 bytes
+1345338904671 Executing command 4 of 10
+1345338904671 Sending 5 bytes
+1345338904671 Executing command 5 of 10
+1345338904671 Receiving 5 bytes
+1345338904681 Executing command 6 of 10
+1345338904681 Start measuring command
+1345338904681 Executing command 7 of 10
+1345338904681 Sending 17 bytes
+1345338904681 Executing command 8 of 10
+1345338904681 Receiving 12500013 bytes
+1345338925598 Time is up, ending (select() timed out)
+1345338925598 readPacket did not read all bytes (1994360/12500013)
+1345338925598 End of transfer; 17 bytes transferred and 1994360 bytes received
+1345338926598 Resets received: 0 ; Resets sent: 0
+1345338926598 Transmitted 17 bytes and received 1994360 bytes in 20.917 seconds: 7 762786 bps (state=8)
+1345338926598 Client: Transferred 12500013 bytes and received 17 bytes in 19.907 seconds: 5023363.841864671 6.831767719897523 bps (state=7)
+1345338926598 Received: replay BitTorrent as client on port 50806 for 21 seconds.
+1345338927488 Enabled TCP_NODELAY option for socket
+1345338927488 Running BitTorrent as client on port 50806 .
+1345338927488 Replaying BitTorrent for 21 seconds
+1345338927488 Executing command 0 of 10
+1345338927488 Sending 68 bytes
+1345338927488 Executing command 1 of 10
+1345338927488 Receiving 68 bytes
+1345338927533 Executing command 2 of 10
+1345338927533 Sending 166 bytes
+1345338927533 Executing command 3 of 10
+1345338927533 Receiving 166 bytes
+1345338927555 Executing command 4 of 10
+1345338927555 Sending 5 bytes
+1345338927555 Executing command 5 of 10
+1345338927555 Receiving 5 bytes
+1345338927571 Executing command 6 of 10
+1345338927571 Start measuring command
+1345338927571 Executing command 7 of 10
+1345338927571 Sending 17 bytes
+1345338927571 Executing command 8 of 10
+1345338927571 Receiving 12500013 bytes
+1345338948488 Time is up, ending (select() timed out)
+1345338948488 readPacket did not read all bytes (2439660/12500013)
+1345338948488 End of transfer; 17 bytes transferred and 2439660 bytes received
+1345338949488 Resets received: 0 ; Resets sent: 0
+1345338949489 Transmitted 17 bytes and received 2439660 bytes in 20.917 seconds: 7 933079 bps (state=8)
+1345338949489 Client: Transferred 12500013 bytes and received 17 bytes in 19.919 seconds: 5020337.567146945 6.827651990561775 bps (state=7)
+1345338950573 Received: replay BitTorrent as client on port 50806 for 21 seconds as a control flow.
+1345338951056 Enabled TCP_NODELAY option for socket
+1345338951056 Running control flow of BitTorrent as client on port 50806 .
+1345338951056 Replaying BitTorrent for 21 seconds
+1345338951056 Executing command 0 of 10
+1345338951056 Sending 68 bytes
+1345338951056 Executing command 1 of 10
+1345338951056 Receiving 68 bytes
+1345338951099 Executing command 2 of 10
+1345338951099 Sending 166 bytes
+1345338951099 Executing command 3 of 10
+1345338951099 Receiving 166 bytes
+1345338951108 Executing command 4 of 10
+1345338951108 Sending 5 bytes
+1345338951108 Executing command 5 of 10
+1345338951108 Receiving 5 bytes
+1345338951117 Executing command 6 of 10
+1345338951117 Start measuring command
+1345338951117 Executing command 7 of 10
+1345338951117 Sending 17 bytes
+1345338951117 Executing command 8 of 10
+1345338951117 Receiving 12500013 bytes
+1345338972057 Time is up, ending (select() timed out)
+1345338972057 readPacket did not read all bytes (2387100/12500013)
+1345338972057 End of transfer; 17 bytes transferred and 2387100 bytes received
+1345338973057 Resets received: 0 ; Resets sent: 0
+1345338973057 Transmitted 17 bytes and received 2387100 bytes in 20.940 seconds: 6 911989 bps (state=8)
+1345338973057 Client: Transferred 12500013 bytes and received 17 bytes in 19.94 seconds: 5015050.351053159 6.820461384152457 bps (state=7)
+1345338974255 Received: replay BitTorrent as client on port 50806 for 21 seconds.
+1345338974653 Enabled TCP_NODELAY option for socket
+1345338974653 Running BitTorrent as client on port 50806 .
+1345338974653 Replaying BitTorrent for 21 seconds
+1345338974653 Executing command 0 of 10
+1345338974653 Sending 68 bytes
+1345338974653 Executing command 1 of 10
+1345338974653 Receiving 68 bytes
+1345338974682 Executing command 2 of 10
+1345338974682 Sending 166 bytes
+1345338974682 Executing command 3 of 10
+1345338974682 Receiving 166 bytes
+1345338974696 Executing command 4 of 10
+1345338974696 Sending 5 bytes
+1345338974696 Executing command 5 of 10
+1345338974696 Receiving 5 bytes
+1345338974705 Executing command 6 of 10
+1345338974705 Start measuring command
+1345338974705 Executing command 7 of 10
+1345338974705 Sending 17 bytes
+1345338974705 Executing command 8 of 10
+1345338974705 Receiving 12500013 bytes
+1345338995653 Time is up, ending (select() timed out)
+1345338995653 readPacket did not read all bytes (2439660/12500013)
+1345338995653 End of transfer; 17 bytes transferred and 2439660 bytes received
+1345338996653 Resets received: 0 ; Resets sent: 0
+1345338996654 Transmitted 17 bytes and received 2439660 bytes in 20.949 seconds: 6 931667 bps (state=8)
+1345338996654 Client: Transferred 12500013 bytes and received 17 bytes in 19.933 seconds: 5016811.518587267 6.822856569507851 bps (state=7)
+1345338997737 Received: replay BitTorrent as client on port 50806 for 21 seconds as a control flow.
+1345338998210 Enabled TCP_NODELAY option for socket
+1345338998210 Running control flow of BitTorrent as client on port 50806 .
+1345338998210 Replaying BitTorrent for 21 seconds
+1345338998210 Executing command 0 of 10
+1345338998210 Sending 68 bytes
+1345338998210 Executing command 1 of 10
+1345338998210 Receiving 68 bytes
+1345338998254 Executing command 2 of 10
+1345338998254 Sending 166 bytes
+1345338998254 Executing command 3 of 10
+1345338998254 Receiving 166 bytes
+1345338998268 Executing command 4 of 10
+1345338998268 Sending 5 bytes
+1345338998268 Executing command 5 of 10
+1345338998268 Receiving 5 bytes
+1345338998283 Executing command 6 of 10
+1345338998283 Start measuring command
+1345338998283 Executing command 7 of 10
+1345338998283 Sending 17 bytes
+1345338998283 Executing command 8 of 10
+1345338998283 Receiving 12500013 bytes
+1345339019210 Time is up, ending (select() timed out)
+1345339019210 readPacket did not read all bytes (2213360/12500013)
+1345339019210 End of transfer; 17 bytes transferred and 2213360 bytes received
+1345339020210 Resets received: 0 ; Resets sent: 0
+1345339020210 Transmitted 17 bytes and received 2213360 bytes in 20.927 seconds: 6 846125 bps (state=8)
+1345339020210 Client: Transferred 12500013 bytes and received 17 bytes in 19.923 seconds: 5019329.619033279 6.826281182552829 bps (state=7)
+1345339020210 Received: replay BitTorrent as server on port 6881 for 20 seconds.
+1345339021159 Enabled TCP_NODELAY option for socket
+1345339021159 Running BitTorrent as server on port 6881 .
+1345339021159 Replaying BitTorrent for 20 seconds
+1345339021159 Executing command 0 of 10
+1345339021159 Receiving 68 bytes
+1345339021197 Executing command 1 of 10
+1345339021197 Sending 68 bytes
+1345339021197 Executing command 2 of 10
+1345339021197 Receiving 166 bytes
+1345339021212 Executing command 3 of 10
+1345339021212 Sending 166 bytes
+1345339021212 Executing command 4 of 10
+1345339021212 Receiving 5 bytes
+1345339021234 Executing command 5 of 10
+1345339021234 Sending 5 bytes
+1345339021234 Executing command 6 of 10
+1345339021234 Start measuring command
+1345339021234 Executing command 7 of 10
+1345339021234 Receiving 17 bytes
+1345339021253 Executing command 8 of 10
+1345339022174 Sending 12500013 bytes
+1345339041333 Time is up, ending
+1345339041333 writePacket did not write all bytes (11643500/12500013)
+1345339041333 End of transfer; 11643500 bytes transferred and 17 bytes received
+1345339042334 Resets received: 0 ; Resets sent: 0
+1345339042335 Transmitted 11643500 bytes and received 17 bytes in 20.099 seconds: 4634572 7 bps (state=8)
+1345339042335 Client: Transferred 17 bytes and received 11643500 bytes in 20.901 seconds: 6.506865700205732 4456628.869432084 bps (state=8)
+1345339042659 Received: replay BitTorrent as server on port 6881 for 20 seconds as a control flow.
+1345339042713 Enabled TCP_NODELAY option for socket
+1345339042713 Running control flow of BitTorrent as server on port 6881 .
+1345339042713 Replaying BitTorrent for 20 seconds
+1345339042713 Executing command 0 of 10
+1345339042713 Receiving 68 bytes
+1345339042742 Executing command 1 of 10
+1345339042742 Sending 68 bytes
+1345339042742 Executing command 2 of 10
+1345339042742 Receiving 166 bytes
+1345339042758 Executing command 3 of 10
+1345339042758 Sending 166 bytes
+1345339042758 Executing command 4 of 10
+1345339042758 Receiving 5 bytes
+1345339042771 Executing command 5 of 10
+1345339042771 Sending 5 bytes
+1345339042771 Executing command 6 of 10
+1345339042771 Start measuring command
+1345339042771 Executing command 7 of 10
+1345339042771 Receiving 17 bytes
+1345339042793 Executing command 8 of 10
+1345339043706 Sending 12500013 bytes
+1345339063173 Time is up, ending
+1345339063173 writePacket did not write all bytes (11774900/12500013)
+1345339063173 End of transfer; 11774900 bytes transferred and 17 bytes received
+1345339064174 Resets received: 0 ; Resets sent: 0
+1345339064175 Transmitted 11774900 bytes and received 17 bytes in 20.403 seconds: 4617040 7 bps (state=8)
+1345339064175 Client: Transferred 17 bytes and received 11774900 bytes in 20.901 seconds: 6.506865700205732 4506923.113726616 bps (state=8)
+1345339064198 Received: replay BitTorrent as server on port 6881 for 20 seconds.
+1345339064235 Enabled TCP_NODELAY option for socket
+1345339064235 Running BitTorrent as server on port 6881 .
+1345339064235 Replaying BitTorrent for 20 seconds
+1345339064235 Executing command 0 of 10
+1345339064235 Receiving 68 bytes
+1345339064274 Executing command 1 of 10
+1345339064274 Sending 68 bytes
+1345339064274 Executing command 2 of 10
+1345339064274 Receiving 166 bytes
+1345339064302 Executing command 3 of 10
+1345339064302 Sending 166 bytes
+1345339064302 Executing command 4 of 10
+1345339064302 Receiving 5 bytes
+1345339064310 Executing command 5 of 10
+1345339064310 Sending 5 bytes
+1345339064310 Executing command 6 of 10
+1345339064310 Start measuring command
+1345339064310 Executing command 7 of 10
+1345339064310 Receiving 17 bytes
+1345339064324 Executing command 8 of 10
+1345339065232 Sending 12500013 bytes
+1345339084865 Time is up, ending
+1345339084865 End of transfer; 12500013 bytes transferred and 17 bytes received
+1345339085866 Resets received: 0 ; Resets sent: 0
+1345339085867 Transmitted 12500013 bytes and received 17 bytes in 20.555 seconds: 4865037 7 bps (state=9)
+1345339085867 Client: Transferred 34 bytes and received 12500013 bytes in 20.904 seconds: 13.011863758132415 4783778.415614236 bps (state=8)
+1345339085867 Received: replay BitTorrent as server on port 6881 for 20 seconds as a control flow.
+1345339085917 Enabled TCP_NODELAY option for socket
+1345339085917 Running control flow of BitTorrent as server on port 6881 .
+1345339085917 Replaying BitTorrent for 20 seconds
+1345339085917 Executing command 0 of 10
+1345339085917 Receiving 68 bytes
+1345339085946 Executing command 1 of 10
+1345339085946 Sending 68 bytes
+1345339085946 Executing command 2 of 10
+1345339085946 Receiving 166 bytes
+1345339085979 Executing command 3 of 10
+1345339085979 Sending 166 bytes
+1345339085979 Executing command 4 of 10
+1345339085979 Receiving 5 bytes
+1345339086010 Executing command 5 of 10
+1345339086010 Sending 5 bytes
+1345339086011 Executing command 6 of 10
+1345339086011 Start measuring command
+1345339086011 Executing command 7 of 10
+1345339086011 Receiving 17 bytes
+1345339086036 Executing command 8 of 10
+1345339086985 Sending 12500013 bytes
+1345339106051 Time is up, ending
+1345339106051 writePacket did not write all bytes (10065240/12500013)
+1345339106051 End of transfer; 10065240 bytes transferred and 17 bytes received
+1345339107052 Resets received: 0 ; Resets sent: 0
+1345339107053 Transmitted 10065240 bytes and received 17 bytes in 20.041 seconds: 4017896 7 bps (state=8)
+1345339107053 Client: Transferred 17 bytes and received 10065240 bytes in 20.872 seconds: 6.515906477577616 3857891.9126101956 bps (state=8)
+1345339107406 Received: replay BitTorrent as server on port 6881 for 20 seconds.
+1345339107431 Enabled TCP_NODELAY option for socket
+1345339107431 Running BitTorrent as server on port 6881 .
+1345339107431 Replaying BitTorrent for 20 seconds
+1345339107431 Executing command 0 of 10
+1345339107431 Receiving 68 bytes
+1345339107470 Executing command 1 of 10
+1345339107470 Sending 68 bytes
+1345339107471 Executing command 2 of 10
+1345339107471 Receiving 166 bytes
+1345339107482 Executing command 3 of 10
+1345339107483 Sending 166 bytes
+1345339107483 Executing command 4 of 10
+1345339107483 Receiving 5 bytes
+1345339107508 Executing command 5 of 10
+1345339107508 Sending 5 bytes
+1345339107508 Executing command 6 of 10
+1345339107508 Start measuring command
+1345339107508 Executing command 7 of 10
+1345339107508 Receiving 17 bytes
+1345339107521 Executing command 8 of 10
+1345339108437 Sending 12500013 bytes
+1345339127523 Time is up, ending
+1345339127523 writePacket did not write all bytes (11196740/12500013)
+1345339127523 End of transfer; 11196740 bytes transferred and 17 bytes received
+1345339128524 Resets received: 0 ; Resets sent: 0
+1345339128525 Transmitted 11196740 bytes and received 17 bytes in 20.015 seconds: 4475361 7 bps (state=8)
+1345339128525 Client: Transferred 17 bytes and received 11196740 bytes in 20.914 seconds: 6.502821076790666 4282964.521373242 bps (state=8)
+1345339128932 Received: replay BitTorrent as server on port 6881 for 20 seconds as a control flow.
+1345339128961 Enabled TCP_NODELAY option for socket
+1345339128961 Running control flow of BitTorrent as server on port 6881 .
+1345339128962 Replaying BitTorrent for 20 seconds
+1345339128962 Executing command 0 of 10
+1345339128962 Receiving 68 bytes
+1345339129009 Executing command 1 of 10
+1345339129009 Sending 68 bytes
+1345339129009 Executing command 2 of 10
+1345339129009 Receiving 166 bytes
+1345339129023 Executing command 3 of 10
+1345339129023 Sending 166 bytes
+1345339129023 Executing command 4 of 10
+1345339129023 Receiving 5 bytes
+1345339129045 Executing command 5 of 10
+1345339129045 Sending 5 bytes
+1345339129045 Executing command 6 of 10
+1345339129045 Start measuring command
+1345339129045 Executing command 7 of 10
+1345339129045 Receiving 17 bytes
+1345339129057 Executing command 8 of 10
+1345339129971 Sending 12500013 bytes
+1345339149774 Time is up, ending
+1345339149774 writePacket did not write all bytes (11520860/12500013)
+1345339149774 End of transfer; 11520860 bytes transferred and 17 bytes received
+1345339150774 Resets received: 1 ; Resets sent: 0
+1345339150775 Transmitted 11520860 bytes and received 17 bytes in 20.730 seconds: 4446115 7 bps (state=8)
+1345339150775 Client: Transferred 17 bytes and received 11485660 bytes in 20.908 seconds: 6.50468720107136 4394742.682226898 bps (state=8)
+1345339150775 Received: replay BitTorrent as server on port 50806 for 20 seconds.
+1345339151247 Enabled TCP_NODELAY option for socket
+1345339151247 Running BitTorrent as server on port 50806 .
+1345339151247 Replaying BitTorrent for 20 seconds
+1345339151247 Executing command 0 of 10
+1345339151247 Receiving 68 bytes
+1345339151275 Executing command 1 of 10
+1345339151275 Sending 68 bytes
+1345339151275 Executing command 2 of 10
+1345339151275 Receiving 166 bytes
+1345339151293 Executing command 3 of 10
+1345339151293 Sending 166 bytes
+1345339151293 Executing command 4 of 10
+1345339151293 Receiving 5 bytes
+1345339151307 Executing command 5 of 10
+1345339151307 Sending 5 bytes
+1345339151307 Executing command 6 of 10
+1345339151307 Start measuring command
+1345339151307 Executing command 7 of 10
+1345339151307 Receiving 17 bytes
+1345339151324 Executing command 8 of 10
+1345339152244 Sending 12500013 bytes
+1345339171833 Time is up, ending
+1345339171833 writePacket did not write all bytes (10549960/12500013)
+1345339171833 End of transfer; 10549960 bytes transferred and 17 bytes received
+1345339172833 Resets received: 0 ; Resets sent: 0
+1345339172834 Transmitted 10549960 bytes and received 17 bytes in 20.526 seconds: 4111872 7 bps (state=8)
+1345339172834 Client: Transferred 17 bytes and received 10549960 bytes in 20.912 seconds: 6.503442999234889 4035944.912012242 bps (state=8)
+1345339172834 Received: replay BitTorrent as server on port 50806 for 20 seconds as a control flow.
+1345339172863 Enabled TCP_NODELAY option for socket
+1345339172863 Running control flow of BitTorrent as server on port 50806 .
+1345339172863 Replaying BitTorrent for 20 seconds
+1345339172863 Executing command 0 of 10
+1345339172863 Receiving 68 bytes
+1345339172905 Executing command 1 of 10
+1345339172905 Sending 68 bytes
+1345339172905 Executing command 2 of 10
+1345339172905 Receiving 166 bytes
+1345339172915 Executing command 3 of 10
+1345339172915 Sending 166 bytes
+1345339172915 Executing command 4 of 10
+1345339172915 Receiving 5 bytes
+1345339172927 Executing command 5 of 10
+1345339172927 Sending 5 bytes
+1345339172927 Executing command 6 of 10
+1345339172927 Start measuring command
+1345339172927 Executing command 7 of 10
+1345339172927 Receiving 17 bytes
+1345339172946 Executing command 8 of 10
+1345339173874 Sending 12500013 bytes
+1345339191478 Executing command 9 of 10
+1345339191478 Goto command: jumping to command 7
+1345339191478 Executing command 7 of 10
+1345339191478 Receiving 17 bytes
+1345339191510 Executing command 8 of 10
+1345339192437 Sending 12500013 bytes
+1345339193438 Time is up, ending
+1345339193438 writePacket did not write all bytes (246740/12500013)
+1345339193438 End of transfer; 12746753 bytes transferred and 34 bytes received
+1345339194438 Resets received: 0 ; Resets sent: 0
+1345339194439 Transmitted 12746753 bytes and received 34 bytes in 20.511 seconds: 4971710 13 bps (state=8)
+1345339194439 Client: Transferred 34 bytes and received 12746753 bytes in 20.927 seconds: 12.997562956945574 4872844.841592202 bps (state=8)
+1345339194439 Received: replay BitTorrent as server on port 50806 for 20 seconds.
+1345339194473 Enabled TCP_NODELAY option for socket
+1345339194473 Running BitTorrent as server on port 50806 .
+1345339194473 Replaying BitTorrent for 20 seconds
+1345339194473 Executing command 0 of 10
+1345339194473 Receiving 68 bytes
+1345339194515 Executing command 1 of 10
+1345339194515 Sending 68 bytes
+1345339194515 Executing command 2 of 10
+1345339194515 Receiving 166 bytes
+1345339194531 Executing command 3 of 10
+1345339194531 Sending 166 bytes
+1345339194531 Executing command 4 of 10
+1345339194531 Receiving 5 bytes
+1345339194540 Executing command 5 of 10
+1345339194540 Sending 5 bytes
+1345339194540 Executing command 6 of 10
+1345339194540 Start measuring command
+1345339194540 Executing command 7 of 10
+1345339194540 Receiving 17 bytes
+1345339194550 Executing command 8 of 10
+1345339195501 Sending 12500013 bytes
+1345339215333 Time is up, ending
+1345339215333 writePacket did not write all bytes (8437340/12500013)
+1345339215333 End of transfer; 8437340 bytes transferred and 17 bytes received
+1345339216334 Resets received: 1 ; Resets sent: 0
+1345339216335 Transmitted 8437340 bytes and received 17 bytes in 20.793 seconds: 3246258 7 bps (state=8)
+1345339216335 Client: Transferred 17 bytes and received 8411060 bytes in 20.921 seconds: 6.500645284642226 3216312.7957554613 bps (state=8)
+1345339216335 Received: replay BitTorrent as server on port 50806 for 20 seconds as a control flow.
+1345339216355 Enabled TCP_NODELAY option for socket
+1345339216355 Running control flow of BitTorrent as server on port 50806 .
+1345339216355 Replaying BitTorrent for 20 seconds
+1345339216355 Executing command 0 of 10
+1345339216355 Receiving 68 bytes
+1345339216400 Executing command 1 of 10
+1345339216400 Sending 68 bytes
+1345339216400 Executing command 2 of 10
+1345339216400 Receiving 166 bytes
+1345339216410 Executing command 3 of 10
+1345339216410 Sending 166 bytes
+1345339216410 Executing command 4 of 10
+1345339216410 Receiving 5 bytes
+1345339216419 Executing command 5 of 10
+1345339216419 Sending 5 bytes
+1345339216419 Executing command 6 of 10
+1345339216419 Start measuring command
+1345339216419 Executing command 7 of 10
+1345339216419 Receiving 17 bytes
+1345339216429 Executing command 8 of 10
+1345339217388 Sending 12500013 bytes
+1345339236641 Time is up, ending
+1345339236641 writePacket did not write all bytes (9951360/12500013)
+1345339236641 End of transfer; 9951360 bytes transferred and 17 bytes received
+1345339237642 Resets received: 0 ; Resets sent: 0
+1345339237643 Transmitted 9951360 bytes and received 17 bytes in 20.221 seconds: 3936979 7 bps (state=8)
+1345339237643 Client: Transferred 17 bytes and received 9951360 bytes in 20.926 seconds: 6.499092038612253 3804400.2676096726 bps (state=8)
+1345339237856 Received: replay BitTorrent as server on port 50806 for 20 seconds.
+1345339237885 Enabled TCP_NODELAY option for socket
+1345339237885 Running BitTorrent as server on port 50806 .
+1345339237885 Replaying BitTorrent for 20 seconds
+1345339237885 Executing command 0 of 10
+1345339237885 Receiving 68 bytes
+1345339237924 Executing command 1 of 10
+1345339237924 Sending 68 bytes
+1345339237924 Executing command 2 of 10
+1345339237924 Receiving 166 bytes
+1345339237937 Executing command 3 of 10
+1345339237937 Sending 166 bytes
+1345339237937 Executing command 4 of 10
+1345339237937 Receiving 5 bytes
+1345339237946 Executing command 5 of 10
+1345339237946 Sending 5 bytes
+1345339237946 Executing command 6 of 10
+1345339237946 Start measuring command
+1345339237946 Executing command 7 of 10
+1345339237946 Receiving 17 bytes
+1345339237956 Executing command 8 of 10
+1345339238870 Sending 12500013 bytes
+1345339258028 Time is up, ending
+1345339258028 writePacket did not write all bytes (9873980/12500013)
+1345339258028 End of transfer; 9873980 bytes transferred and 17 bytes received
+1345339259029 Resets received: 0 ; Resets sent: 0
+1345339259030 Transmitted 9873980 bytes and received 17 bytes in 20.082 seconds: 3933466 7 bps (state=8)
+1345339259030 Client: Transferred 17 bytes and received 9873980 bytes in 20.929 seconds: 6.498160447226337 3774276.840747289 bps (state=8)
+1345339259383 Received: replay BitTorrent as server on port 50806 for 20 seconds as a control flow.
+1345339259460 Enabled TCP_NODELAY option for socket
+1345339259460 Running control flow of BitTorrent as server on port 50806 .
+1345339259460 Replaying BitTorrent for 20 seconds
+1345339259460 Executing command 0 of 10
+1345339259460 Receiving 68 bytes
+1345339259500 Executing command 1 of 10
+1345339259500 Sending 68 bytes
+1345339259500 Executing command 2 of 10
+1345339259500 Receiving 166 bytes
+1345339259553 Executing command 3 of 10
+1345339259553 Sending 166 bytes
+1345339259553 Executing command 4 of 10
+1345339259553 Receiving 5 bytes
+1345339259601 Executing command 5 of 10
+1345339259601 Sending 5 bytes
+1345339259601 Executing command 6 of 10
+1345339259601 Start measuring command
+1345339259601 Executing command 7 of 10
+1345339259601 Receiving 17 bytes
+1345339259662 Executing command 8 of 10
+1345339260610 Sending 12500013 bytes
+1345339279460 Time is up, ending (select() timed out)
+1345339279460 writePacket did not write all bytes (7432860/12500013)
+1345339279460 End of transfer; 7432860 bytes transferred and 17 bytes received
+1345339280460 Resets received: 0 ; Resets sent: 0
+1345339280461 Transmitted 7432860 bytes and received 17 bytes in 19.859 seconds: 2994289 7 bps (state=8)
+1345339280469 Client: Transferred 17 bytes and received 7432860 bytes in 20.828 seconds: 6.529671595928558 2854949.106971385 bps (state=8)
+1345339280960 Client: Sysinfo: Windows 7,x86,6.1,Sun Microsystems Inc.,1.6.0_33
+1345339280966 Client: http expu0=12500013&expd0=17&expl0=19.874&expstate0=7&expp0=6881&expprot0=BitTorrent&expserv0=client&expu1=12500013&expd1=17&expl1=19.944&expstate1=7&expp1=6881&expprot1=BitTorrent-cf&expserv1=client&expu2=12500013&expd2=17&expl2=19.921&expstate2=7&expp2=6881&expprot2=BitTorrent&expserv2=client&expu3=12500013&expd3=17&expl3=19.93&expstate3=7&expp3=6881&expprot3=BitTorrent-cf&expserv3=client&expu4=12500013&expd4=17&expl4=19.924&expstate4=7&expp4=6881&expprot4=BitTorrent&expserv4=client&expu5=12500013&expd5=17&expl5=19.905&expstate5=7&expp5=6881&expprot5=BitTorrent-cf&expserv5=client&expu6=12500013&expd6=17&expl6=19.939&expstate6=7&expp6=50806&expprot6=BitTorrent&expserv6=client&expu7=12500013&expd7=17&expl7=19.907&expstate7=7&expp7=50806&expprot7=BitTorrent-cf&expserv7=client&expu8=12500013&expd8=17&expl8=19.919&expstate8=7&expp8=50806&expprot8=BitTorrent&expserv8=client&expu9=12500013&expd9=17&expl9=19.94&expstate9=7&expp9=50806&expprot9=BitTorrent-cf&expserv9=client&expu10=12500013&expd10=17&expl10=19.933&expstate10=7&expp10=50806&expprot10=BitTorrent&expserv10=client&expu11=12500013&expd11=17&expl11=19.923&expstate11=7&expp11=50806&expprot11=BitTorrent-cf&expserv11=client&expu12=17&expd12=11643500&expl12=20.901&expstate12=8&expp12=6881&expprot12=BitTorrent&expserv12=server&expu13=17&expd13=11774900&expl13=20.901&expstate13=8&expp13=6881&expprot13=BitTorrent-cf&expserv13=server&expu14=34&expd14=12500013&expl14=20.904&expstate14=8&expp14=6881&expprot14=BitTorrent&expserv14=server&expu15=17&expd15=10065240&expl15=20.872&expstate15=8&expp15=6881&expprot15=BitTorrent-cf&expserv15=server&expu16=17&expd16=11196740&expl16=20.914&expstate16=8&expp16=6881&expprot16=BitTorrent&expserv16=server&expu17=17&expd17=11485660&expl17=20.908&expstate17=8&expp17=6881&expprot17=BitTorrent-cf&expserv17=server&expu18=17&expd18=10549960&expl18=20.912&expstate18=8&expp18=50806&expprot18=BitTorrent&expserv18=server&expu19=34&expd19=12746753&expl19=20.927&expstate19=8&expp19=50806&expprot19=BitTorrent-cf&expserv19=server&expu20=17&expd20=8411060&expl20=20.921&expstate20=8&expp20=50806&expprot20=BitTorrent&expserv20=server&expu21=17&expd21=9951360&expl21=20.926&expstate21=8&expp21=50806&expprot21=BitTorrent-cf&expserv21=server&expu22=17&expd22=9873980&expl22=20.929&expstate22=8&expp22=50806&expprot22=BitTorrent&expserv22=server&expu23=17&expd23=7432860&expl23=20.828&expstate23=8&expp23=50806&expprot23=BitTorrent-cf&expserv23=server&peer=74.126.227.170&hostname=74-126-227-170.championbroadband.com&done=yes&internal=1&id=1345338742&server=glasnost.mpi-sws.donar.measurement-lab.org&port=0&port2=0&protocol1=BitTorrent&down=true&up=true&repeat=3&duration=20&
+1345339280966 http expsu0=17&expsd0=1813320&expsl0=20.873&expsstate0=8&expsu1=17&expsd1=2445500&expsl1=20.945&expsstate1=8&expsu2=17&expsd2=2420680&expsl2=20.921&expsstate2=8&expsu3=17&expsd3=2427980&expsl3=20.920&expsstate3=8&expsu4=17&expsd4=1765140&expsl4=20.921&expsstate4=8&expsu5=17&expsd5=1987060&expsl5=20.903&expsstate5=8&expsu6=17&expsd6=2236720&expsl6=20.936&expsstate6=8&expsu7=17&expsd7=1994360&expsl7=20.917&expsstate7=8&expsu8=17&expsd8=2439660&expsl8=20.917&expsstate8=8&expsu9=17&expsd9=2387100&expsl9=20.940&expsstate9=8&expsu10=17&expsd10=2439660&expsl10=20.949&expsstate10=8&expsu11=17&expsd11=2213360&expsl11=20.927&expsstate11=8&expsu12=11643500&expsd12=17&expsl12=20.099&expsstate12=8&expsu13=11774900&expsd13=17&expsl13=20.403&expsstate13=8&expsu14=12500013&expsd14=17&expsl14=20.555&expsstate14=9&expsu15=10065240&expsd15=17&expsl15=20.041&expsstate15=8&expsu16=11196740&expsd16=17&expsl16=20.015&expsstate16=8&expsu17=11520860&expsd17=17&expsl17=20.730&expsstate17=8&expsu18=10549960&expsd18=17&expsl18=20.526&expsstate18=8&expsu19=12746753&expsd19=34&expsl19=20.511&expsstate19=8&expsu20=8437340&expsd20=17&expsl20=20.793&expsstate20=8&expsu21=9951360&expsd21=17&expsl21=20.221&expsstate21=8&expsu22=9873980&expsd22=17&expsl22=20.082&expsstate22=8&expsu23=7432860&expsd23=17&expsl23=19.859&expsstate23=8&
+1345339280967 Zipping logs/glasnost_74.126.227.170_74-126-227-170.championbroadband.com_1345338742.dump to logs/glasnost_74.126.227.170_74-126-227-170.championbroadband.com_1345338742.dump.gz
+1345339282266 Done.
