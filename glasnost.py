@@ -1,5 +1,6 @@
 import itertools,re #we are going to need them
 import psycopg2,datetime
+import os,sys
 
 sql=psycopg2.connect(database="glasnost",user="glasnost")
 cur=sql.cursor()
@@ -77,6 +78,15 @@ class Log:
             yield {"test": self.extract_test(lines), "server": self.extract_server_results(lines),
                 "client": self.extract_client_results(lines)}
 
+def process_files(cd,files,cur=None):
+    logfile=re.compile(".log$")
+    for f in files:
+        if logfile.search(f):
+            print "reading: %s"%f
+            Log(os.path.join(cd,f),cur)
+
 if __name__=="__main__":
-    log=Log("testdata.log",cur)
+    dir=sys.argv[1]
+    for (cd,dirs,files) in os.walk(dir):
+        process_files(cd,files,cur)
     sql.commit()
