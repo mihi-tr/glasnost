@@ -1,3 +1,4 @@
+cymruwhois==1.0
 ipython==0.13
 psycopg2==2.4.5
 pyzmq==2.2.0.1
