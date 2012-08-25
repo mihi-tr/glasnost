@@ -44,7 +44,7 @@ run ``python results.py`` to calculate the results tables
 Frontend
 --------
 
-To install jvectormap run::
-    
-    git submodule init
-    git sumbodule update
+run ``python create-json.py``
+
+rsync the ``html`` directory to a server or call 
+``python -m SimpleHTTPServer`` in the directory
