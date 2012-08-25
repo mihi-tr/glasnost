@@ -1,0 +1,16 @@
+
+#countryinfo {
+    }
+
+#countryinfo > table {
+    border: 1px solid black;
+    }
+#countryinfo th {
+    text-align: left;
+    border: 1px solid black;
+    padding: 2px;
+    }
+#countryinfo td {
+    border: 1px solid black;
+    padding: 2px;
+    }

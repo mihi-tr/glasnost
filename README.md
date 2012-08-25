@@ -40,3 +40,11 @@ run ``python glasnost.py <dir>`` where <dir> points to the directory of your log
 run ``python asn.py`` to do the asn lookups (providers)
 
 run ``python results.py`` to calculate the results tables
+
+Frontend
+--------
+
+To install jvectormap run::
+    
+    git submodule init
+    git sumbodule update
