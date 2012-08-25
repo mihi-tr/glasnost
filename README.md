@@ -38,3 +38,5 @@ extract all the datafiles you want to import
 run ``python glasnost.py <dir>`` where <dir> points to the directory of your logfiles 
 
 run ``python asn.py`` to do the asn lookups (providers)
+
+run ``python results.py`` to calculate the results tables
