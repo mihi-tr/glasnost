@@ -1,8 +1,8 @@
 import itertools,re #we are going to need them
-import psycopg2,datetime
+import datetime
 import os,sys
+from settings import sql, geoip
 
-sql=psycopg2.connect(database="glasnost",user="glasnost")
 cur=sql.cursor()
 
 
@@ -27,8 +27,13 @@ class Log:
     
     def store_client(self):
         self.client["time"]=datetime.datetime.fromtimestamp(int(self.client["time"])/1000)
-        self.sql.execute("""insert into client (ip,time) values
-        ('{ip}','{time}');""".format(**self.client))
+        if geoip:
+            self.client["cc"]=geoip.country_code_by_addr(self.client["ip"])
+            self.sql.execute("""insert into client (ip,time,cc) values
+            ('{ip}','{time}','{cc}');""".format(**self.client))
+        else:
+            self.sql.execute("""insert into client (ip,time) values
+            ('{ip}','{time}');""".format(**self.client))
         self.sql.execute("""select id from client where ip='{ip}' and
         time='{time}' limit 1;""".format(**self.client))
         self.clientid=self.sql.fetchone()[0]
@@ -89,4 +94,6 @@ if __name__=="__main__":
     dir=sys.argv[1]
     for (cd,dirs,files) in os.walk(dir):
         process_files(cd,files,cur)
+    cur.execute("""delete from client where id not in (select
+    distinct(client_id) from test);""")
     sql.commit()

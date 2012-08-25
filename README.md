@@ -25,4 +25,7 @@ Now install the requirements::
 
     pip install -r requirements.txt
 
+Download the geoip database from http://www.maxmind.com/download/geoip/database/GeoLiteCountry/
+and edit your settings.py accordingly
+
 go ahead and play with glasnost.py

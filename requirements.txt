@@ -4,3 +4,11 @@ psycopg2==2.4.5
 pyzmq==2.2.0.1
 tornado==2.3
 wsgiref==0.1.2
+cymruwhois==1.0
+ipython==0.13
+psycopg2==2.4.5
+pygeoip==0.2.4
+pyzmq==2.2.0.1
+six==1.1.0
+tornado==2.3
+wsgiref==0.1.2
