@@ -28,4 +28,13 @@ Now install the requirements::
 Download the geoip database from http://www.maxmind.com/download/geoip/database/GeoLiteCountry/
 and edit your settings.py accordingly
 
-go ahead and play with glasnost.py
+Toolchain
+---------
+
+Download the glasnost data using gs-util
+
+extract all the datafiles you want to import
+
+run ``python glasnost.py <dir>`` where <dir> points to the directory of your logfiles 
+
+run ``python asn.py`` to do the asn lookups (providers)

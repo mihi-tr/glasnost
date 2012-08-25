@@ -1,0 +1,41 @@
+Create ASN Table
+
+Add ASN Field to IP (make it foreign key?) (but None possible) add CC field
+
+Procedure:
+
+Import:
+
+clean: 
+
+delete from host where ip not in (select distinct client_ip from tests);
+
+api:
+    REST API (GET only for the moment)
+
+    countries
+
+        [ {"country_code": "AT", "score":"0.9"}]
+    
+    country/AT
+        [{"Provider":"FUNKFEUER", "id": 20, "score":"0.9"}]
+
+    providers/
+        [{"Provider":"FUNKFEUER", "score":"0.9"}]
+
+    provider/id
+        [{"Provider":"FUNKFEUER","id": 20, "score":0.9,
+        "bittorrent":0.9,"nntp":1, "flv": 1}]
+
+Data: Imported 1 year - use data of 1 year for map.
+
+Metric:
+
+Geoip:
+    use pygeoip and the geoip database from: 
+        http://www.maxmind.com/download/geoip/database/GeoLiteCountry/GeoIP.dat.gz
+
+
+Fuer test "server" und jedem port: 
+
+Jvectormap: http://jvectormap.com/
