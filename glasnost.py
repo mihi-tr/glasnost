@@ -88,7 +88,10 @@ def process_files(cd,files,cur=None):
     for f in files:
         if logfile.search(f):
             print "reading: %s"%f
-            Log(os.path.join(cd,f),cur)
+            try:
+                Log(os.path.join(cd,f),cur)
+            except StopIteration:
+                pass # don't fail hard if we fail
 
 if __name__=="__main__":
     dir=sys.argv[1]
