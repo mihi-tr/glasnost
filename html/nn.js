@@ -135,7 +135,7 @@ function loadcountryinfo(cc) {
         $("#countrycode").html(cc);
 
         var html=[
-        "<thead><tr><th>Provider</th><th>Total tests</th><th>Shaped",
+        "<thead><tr><th>Provider</th><th>Total tests</th><th>Shaped ",
         "tests</th><th>Percent tests shaped</th></tr></thead>",
          "<tbody>"]
         for (i in data) {
