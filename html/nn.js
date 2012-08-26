@@ -2,6 +2,8 @@ var datamap={};
 
 var test="";
 
+var colorscale=["#00FF00","#FFFF00","#FF0000"]
+
 function testlist() {
     $.get("json/tests.json", function(data) {
         for (i in data) {
@@ -11,6 +13,13 @@ function testlist() {
         })
     }
 
+function period() {
+    $.get("json/period.json",function (data) {
+        $("#period-begin").html(data["begin"]);
+        $("#period-end").html(data["end"]);
+        }
+        )
+    }
 function selecttest() {
     test=$("#testselector").val();
     loaddata();
@@ -37,7 +46,7 @@ function loaddata () {
             series: {
                 regions: [{
                     values: datamap,
-                    scale: ['#00FF00', '#FFFF00','#FF0000'],
+                    scale: colorscale,
                     attribute: 'fill',
                     min: 1,
                     max: 101
@@ -69,4 +78,4 @@ function loadcountryinfo(cc) {
         })
     }
 
-$(document).ready(function () { testlist(); loaddata() })
+$(document).ready(function () { testlist(); period(); loaddata() })

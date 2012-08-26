@@ -1,4 +1,4 @@
-import json
+import json,datetime
 from settings import sql,json_dir
 
 cur=sql.cursor()
@@ -52,3 +52,12 @@ for provider in [r[0] for r in cur.fetchall()]:
     dump_json("""select test,total,shaped,percent_shaped from provider_results where
     owner='%s';"""%(provider),["test","total","shaped","percent"],
     "%s/provider-%s.json"%(json_dir,provider_cleaned))
+
+today=datetime.datetime.now()
+last_year=datetime.date(today.year-1,today.month,today.day)
+
+cur.execute("""select min(time),max(time) from client_results where time >
+'%s';"""%last_year)
+f=open("%s/period.json"%json_dir,"w")
+json.dump(dict(zip(["begin","end"],['%s'%d for d in cur.fetchone()])), f)
+f.close()
