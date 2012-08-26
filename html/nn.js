@@ -135,14 +135,17 @@ function loadcountryinfo(cc) {
         $("#countrycode").html(cc);
 
         var html=[
-        "<tr><th>Provider</th><th>Total tests</th><th>Shaped tests</th><th>Percent tests shaped</th></tr>"]
+        "<thead><tr><th>Provider</th><th>Total tests</th><th>Shaped",
+        "tests</th><th>Percent tests shaped</th></tr></thead>",
+         "<tbody>"]
         for (i in data) {
             var c=map_value_to_range(data[i].percent,0,100,colorscale);
             html.push("<tr><td>",data[i].provider,"</td><td>",data[i].total,
             "</td><td>",data[i].shaped,"</td><td style='background: "+c+"'>",data[i].percent,"%</td></tr>")
         }
+        html.push("</tbody>")
         $("#providertable").html(html.join(""));
-        sortables_init(); 
+        $("#providertable").tablesorter([[4,0],[0,0]]);
         })
     }
 

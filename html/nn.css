@@ -26,4 +26,10 @@ body {
     }
 h1,h2,h3 {
     font-family: sans-serif;
+    color: #505050;
+    }
+thead {
+    background: #505050;
+    color: white;
+    font-family: sans-serif;
     }
