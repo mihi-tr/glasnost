@@ -1,13 +1,37 @@
-var datamap={}
+var datamap={};
 
-function loadalltests () {
-    $.get("json/countries.json",function(data) {
+var test="";
+
+function testlist() {
+    $.get("json/tests.json", function(data) {
+        for (i in data) {
+            $("#testselector").append("<option value="
+                +data[i]+">"+data[i]+"</option>");
+                }
+        })
+    }
+
+function selecttest() {
+    test=$("#testselector").val();
+    loaddata();
+};
+function loaddata () {
+    var url;
+    if (test) {
+        url="json/countries-"+test+".json";
+        }
+    else {
+        url="json/countries.json";
+        }
+        
+    $.get(url,function(data) {
+        datamap={};
         for (c in data) {
             if (data[c].cc !="BB") {
                 datamap[data[c].cc]=data[c].percent+1; 
                 }
             }
-            
+        $('#world-map').html("")            
         $('#world-map').vectorMap({
             map: 'world_mill_en',
             series: {
@@ -25,7 +49,14 @@ function loadalltests () {
             }
 
 function loadcountryinfo(cc) {
-    $.get("json/country-"+cc+".json", function(data ) {
+    var url;
+    if (test) {
+        url="json/country-"+cc+"-"+test+".json";
+        }
+    else {
+        url="json/country-"+cc+".json";
+        };
+    $.get(url, function(data ) {
         var html=["<h1>"+cc+"</h1>","<table>",
         "<tr><th>Provider</th><th>Total tests</th><th>Shaped tests</th><th>Percent tests shaped</th></tr>"]
         for (i in data) {
@@ -38,4 +69,4 @@ function loadcountryinfo(cc) {
         })
     }
 
-$(document).ready(function () { loadalltests() })
+$(document).ready(function () { testlist(); loaddata() })
