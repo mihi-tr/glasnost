@@ -132,16 +132,17 @@ function loadcountryinfo(cc) {
         url="json/country-"+cc+".json";
         };
     $.get(url, function(data ) {
-        var html=["<h1>"+cc+"</h1>","<table>",
+        $("#countrycode").html(cc);
+
+        var html=[
         "<tr><th>Provider</th><th>Total tests</th><th>Shaped tests</th><th>Percent tests shaped</th></tr>"]
         for (i in data) {
             var c=map_value_to_range(data[i].percent,0,100,colorscale);
             html.push("<tr><td>",data[i].provider,"</td><td>",data[i].total,
             "</td><td>",data[i].shaped,"</td><td style='background: "+c+"'>",data[i].percent,"%</td></tr>")
         }
-        html.push("</table>")
-        $("#countryinfo").html(html.join(""));
-        
+        $("#providertable").html(html.join(""));
+        sortables_init(); 
         })
     }
 
