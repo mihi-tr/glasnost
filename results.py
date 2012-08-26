@@ -11,7 +11,7 @@ rate,mode,test.test AS stest FROM result,test WHERE test_id=test.id
 GROUP
 BY test.client_id,mode,test.port,test.test HAVING max(txrate)>0) summary ON summary.client_id=id
 WHERE id NOT IN 
-(SELECT id FROM client_results) GROUP BY client.id,client.ip,summary.stest;""")
+(SELECT id FROM client_results) GROUP BY client.id,client.asn,client.time,client.cc,client.ip,summary.stest;""")
 ''' Don't ask me about this statement: it evolved iteratively 
     If you still want to know: the inner part calculates the
     max(rxrate)/max(txrate) (the final ratio as
