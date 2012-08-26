@@ -13,5 +13,5 @@ for l in lu:
     r=cur.fetchone()
     if not r:
         cur.execute("insert into asn (asn,owner) values(%s,'%s')"%(l.asn,l.owner))
-    cur.execute("update client set asn=%s where ip='%s'"%(l.asn,l.ip))
+    cur.execute("update client set asn=%s where ip='%s' and asn is Null"%(l.asn,l.ip))
 sql.commit()    
