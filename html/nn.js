@@ -27,10 +27,6 @@ function rgb_diff(a,b) {
     return ([a[0]-b[0],a[1]-b[1],a[2]-b[2]])
     }
 
-function rgb_div(a,d) {
-    return ([a[0]/d,a[1]/d,a[2]/d])
-    }
-
 function rgb_mult(a,d) {
     return ([a[0]*d,a[1]*d,a[2]*d])
     }
