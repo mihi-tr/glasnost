@@ -1,5 +1,5 @@
 from settings import sql
-import cymruwhois
+import cymruwhois,time
 
 cur=sql.cursor()
 
@@ -13,7 +13,7 @@ while not success:
         lu=cw.lookupmany(ips)
         success=True
     except:
-        pass
+        time.spleep(10)
 
 for l in lu:
     if l.asn:
