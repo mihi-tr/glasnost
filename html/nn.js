@@ -2,7 +2,8 @@ var datamap={};
 
 var test="";
 
-var colorscale=["#E7E1EF","#C994C7","#DD1C77"]
+//var colorscale=["#E7E1EF","#C994C7","#DD1C77"]
+var colorscale=["#e4f264","#8fd772","#48b581","#149084","#1d6a76","#2c4559"]
 
 function hex_to_rgb(hx) {
     var c=parseInt(hx.replace("#",""),16);
@@ -63,6 +64,15 @@ function map_value_to_range(value,min,max,range) {
         }
     return (r);    
     }
+
+function scalebar() {
+    var html=[]
+    for (var i=0;i<=100;i=i+10) {
+        html.push("<span style='background: "
+        +map_value_to_range(i,0,100,colorscale)+"'>"+i+"%</span>")
+        }
+    $("#scalebar").html(html)    
+        }
 
 function testlist() {
     $.get("json/tests.json", function(data) {
@@ -145,4 +155,4 @@ function loadcountryinfo(cc) {
         })
     }
 
-$(document).ready(function () { testlist(); period(); loaddata() })
+$(document).ready(function () { testlist(); scalebar(); period(); loaddata() })
