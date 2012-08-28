@@ -2,7 +2,7 @@ var datamap={};
 
 var test="";
 
-var colorscale=["#00FF00","#FFFF00","#FF0000"]
+var colorscale=["#E7E1EF","#C994C7","#DD1C77"]
 
 function hex_to_rgb(hx) {
     var c=parseInt(hx.replace("#",""),16);
