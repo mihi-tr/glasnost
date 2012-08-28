@@ -37,7 +37,6 @@ class Log:
         self.sql.execute("""select id from client where ip='{ip}' and
         time='{time}' limit 1;""".format(**self.client))
         self.clientid=self.sql.fetchone()[0]
-        print self.clientid
      
     def store_testresult(self,t):
         test=t["test"]
@@ -87,7 +86,6 @@ def process_files(cd,files,cur=None):
     logfile=re.compile(".log$")
     for f in files:
         if logfile.search(f):
-            print "reading: %s"%f
             try:
                 Log(os.path.join(cd,f),cur)
             except StopIteration:

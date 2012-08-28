@@ -7,7 +7,14 @@ cur=sql.cursor()
 cur.execute("select ip from client where asn is Null");
 ips=[x[0].split("/")[0] for x in cur.fetchall()]
 cw=cymruwhois.Client(memcache_host=None)
-lu=cw.lookupmany(ips)
+success=False
+while not success:
+    try:
+        lu=cw.lookupmany(ips)
+        success=True
+    except:
+        pass
+
 for l in lu:
     if l.asn:
         cur.execute("select asn from asn where asn=%s"%l.asn)
