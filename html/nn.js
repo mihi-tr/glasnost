@@ -148,7 +148,8 @@ function loadcountryinfo(cc) {
         for (i in data) {
             var c=map_value_to_range(data[i].percent,0,100,colorscale);
             html.push("<tr><td>",data[i].provider,"</td><td>",data[i].total,
-            "</td><td>",data[i].shaped,"</td><td style='background: "+c+"'>",data[i].percent,"%</td></tr>")
+            "</td><td>",data[i].shaped,"</td><td style='background: "
+            +c+"'>",Math.round(data[i].percent*10)/10,"%</td></tr>")
         }
         html.push("</tbody>")
         $("#providertable").html(html.join(""));
