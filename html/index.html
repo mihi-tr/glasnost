@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>How neutral is your net?</title>
+	<title>How neutral is the net?</title>
 	<link rel="stylesheet" href="jquery-jvectormap-1.0.css" type="text/css" media="screen"/>
 	<link rel="stylesheet" href="nn.css" type="text/css" media="screen"/>
 	<script src="jquery.js"></script>
@@ -34,7 +34,7 @@
 <body>
 <div id="page-wrapper">
 	<div id="headline">
-		<h1>How neutral is our net?</h1>
+		<h1>How neutral is the net?</h1>
 			<div id="selectbar">
 				Select test
 				<select id="testselector" onmouseup="selecttest()">
@@ -81,6 +81,8 @@
 						zero (CC0) - this means do whatever you want with it - it's free. You can
 						download the current data used from the <a href="json/">json</a>
 						subdirectory.</p>
+                        <p>Percent shaping detected</p>
+                        <div id="scalebar"></div>
 					</section>
 				</div>
 			</div>
@@ -98,7 +100,6 @@
 			<table class='sortable' id='providertable'></table>
 		</div>
 	</div>
-
 </div>
 </body>
 </html>
