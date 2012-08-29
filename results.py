@@ -39,14 +39,15 @@ Null;""")
 cur.execute("""delete from provider_results""");
 cur.execute("""insert into provider_results select owner, test, sum(total)
 as total, sum(shaped) as
-shaped,round(sum(shaped)/sum(total)::numeric*100,2) from asn inner join (select
-client_results.asn, client_results.test, count(id) as total,
+shaped,round(sum(shaped)/sum(total)::numeric*100,2), cc from asn inner join (select
+client_results.asn, client_results.test,client_results.cc, count(id) as total,
 shaped.shaped as shaped from client_results left outer join (select
-asn,test,count(id) as shaped from client_results where rating<0.5 group by
-asn,test) as shaped on shaped.asn=client_results.asn and
-shaped.test=client_results.test where client_results.time > '%s'
-group by client_results.asn,client_results.test,shaped.shaped) as r on r.asn=asn.asn
-group by asn.owner,r.test;"""%last_year)
+asn,test,count(id) as shaped,cc from client_results where rating<0.5 group by
+asn,test,cc) as shaped on shaped.asn=client_results.asn and
+shaped.test=client_results.test and shaped.cc=client_results.cc where client_results.time > '%s'
+group by
+client_results.asn,client_results.test,shaped.shaped,client_results.cc) as r on r.asn=asn.asn
+group by asn.owner,r.test,cc;"""%last_year)
 cur.execute("update provider_results set shaped=0, percent_shaped=0 where shaped is Null");
 
 sql.commit()

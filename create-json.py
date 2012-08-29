@@ -35,14 +35,10 @@ ccs=[r[0] for r in cur.fetchall()]
 for cc in ccs:
     dump_json("""select
     owner,sum(total),sum(shaped),sum(shaped)::real/sum(total)::real*100
-    from provider_results where owner in (select owner from asn where asn
-    in (select asn from client_results where cc='%s')) group by
-    owner;"""%cc,["provider","total","shaped","percent"],"%s/country-%s.json"%(json_dir,cc))
+    from provider_results where cc='%s' group by owner;"""%cc,["provider","total","shaped","percent"],"%s/country-%s.json"%(json_dir,cc))
     for test in tests:
         dump_json("""select owner,total,shaped,percent_shaped from
-        provider_results where owner in (select owner from asn where asn in
-        (select asn from client_results where cc='%s') and
-        test='%s');"""%(cc,test),["provider","total","shaped","percent"],
+        provider_results where cc='%s' and test='%s';"""%(cc,test),["provider","total","shaped","percent"],
            "%s/country-%s-%s.json"%(json_dir,cc,test))
 
 cur.execute("""select distinct(owner) from provider_results;""")
