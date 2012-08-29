@@ -1,69 +1,104 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>How neutral is the net?</title>
-  <link rel="stylesheet" href="jquery-jvectormap-1.0.css" type="text/css" media="screen"/>
-  <link rel="stylesheet" href="nn.css" type="text/css" media="screen"/>
-  <script src="jquery.js"></script>
-  <script src="jquery-jvectormap-1.0.min.js"></script>
-  <script src="jquery-jvectormap-world-mill-en.js"></script>
-  <script src="jquery.tablesorter.min.js"></script>
-  <script src="nn.js"></script>
+	<title>How neutral is your net?</title>
+	<link rel="stylesheet" href="jquery-jvectormap-1.0.css" type="text/css" media="screen"/>
+	<link rel="stylesheet" href="nn.css" type="text/css" media="screen"/>
+	<script src="jquery.js"></script>
+	<script src="jquery-jvectormap-1.0.min.js"></script>
+	<script src="jquery-jvectormap-world-mill-en.js"></script>
+	<script src="jquery.tablesorter.min.js"></script>
+	<script src="nn.js"></script>
+
+	<script src="jquery-ui-1.8.23.custom.min.js"></script>
+	<script>
+		$(function() {
+			$( "#about-wrapper" ).tabs({
+				collapsible: true,
+				fx: { opacity: 'toggle' }
+				}
+				
+			);
+		});
+
+		$("#countryinfo-close").click(function() {
+			$("#countryinfo-wrapper").fadeToggle("fast");
+		});
+
+		$('#countryinfo-wrapper')
+			.resizeable();
+		
+	</script>
+
 </head>
 <body>
-  <h1>How neutral is the net?</h1>
-  <div id="container">
-  <div style="width: 900px; height: 600px" id="world-map"></div>
-  <div id="scalebar"></div>
-  <div id="selectbar">Select test:<select id="testselector" onmouseup="selecttest()"><option
-  selected value="">All</option></select> - data covers the period from
-  <span id="period-begin"></span> to <span id="period-end"></span>.</div>
-  <div id="countryinfo"><h2 id="countrycode"></h2><table class='sortable'
-  id='providertable'></table></div>
-  <h2>About</h2>
-  <h3>Netneutrality</h3>
-  <p>
-  Netneutrality is the principle that all data on the internet is
-  transported using best effort. This includes not discriminating for
-  origin and service. Netneutrality and whether legal obligations for
-  providers need to exist to obey it is currently under debate in Europe
-  and the US. The european commission frequently stated the need for data
-  on Violations of Netneutrality - this data exists. 
-  </p>
-  <h3>This Map</h3>
-  <p>
-  This map shows data from <a
-  href="http://www.measurementlab.net/measurement-lab-tools#tool2">Glasnost</a>,
-  one of the measurementlab tools for examining your interent connection.
-  We map the percentage of tests where violations of netneutrality was
-  discovered worldwide. The metric to determine violations is the one
-  previously used by <a
-  href="http://www.mpi-sws.org/~mmarcon/Glasnost-NSDI.pdf">the glasnost team</a>
-  </p>
-  <p>
-  This map was created by <a href="http://tentacleriot.eu">Michael
-  Bauer</a> using several datasources: Above mentioned <a
-  href="http://www.measurementlab.net/data">Data from measurementlab</a>,
-  <a href="http://www.team-cymru.org/Services/ip-to-asn.html">Team Cymrus
-  Whois server for provider detection</a> and the <a
-  href="http://www.maxmind.com/app/geolite">Geolite</a> database for
-  geomapping IPs. Python and postgres is used for parsing, filtering and
-  analyzing the data. <a href="http://jvectormap.com/">jvectormap</a> is
-  used for visualization. More details on <a
-  href="https://github.com/mihi-tr/glasnost">github</a>
-  </p>
-  <p>
-  This map wouldn't be possible if I didn't have support from these people:
-  Tom Lohninger, thanks for the initial push and feedback; Leonhard Preis,
-  thanks for the server resources (700Gig is a lot of data); 
-  </p>
-  <h2>Data</h2>
-  <p>
-  All data produced and used in this project is licensed creative commons
-  zero (CC0) - this means do whatever you want with it - it's free. You can
-  download the current data used from the <a href="json/">json</a>
-  subdirectory.
-  </p>
+<div id="page-wrapper">
+	<div id="headline">
+		<h1>How neutral is our net?</h1>
+			<div id="selectbar">
+				Select test
+				<select id="testselector" onmouseup="selecttest()">
+					<option selected value="">All</option>
+				</select>
+			</div>
+			<div id="about-wrapper">
+				<ul>
+					<li><a href="#about-netneutrality">Netneutrality</a></li><li><a href="#about-thisMap">This Map</a></li><li><a href="#about-data">Data</a></li>
+				</ul>
+				<div id="about">
+					<section id="about-netneutrality" class="aboutTab">
+						<h3>Netneutrality</h3>
+						<p>Netneutrality is the principle that all data on the internet is
+						transported using best effort. This includes not discriminating for
+						origin and service. Netneutrality and whether legal obligations for
+						providers need to exist to obey it is currently under debate in Europe
+						and the US. The european commission frequently stated the need for data
+						on Violations of Netneutrality - this data exists. </p>
+					</section>
+					<section id="about-thisMap" class="aboutTab">
+						<h3>This Map</h3>
+						<p>This map shows data from <a href="http://www.measurementlab.net/measurement-lab-tools#tool2">Glasnost</a>,
+						one of the measurementlab tools for examining your interent connection.
+						We map the percentage of tests where violations of netneutrality was
+						discovered worldwide. The metric to determine violations is the one
+						previously used by <a
+						href="http://www.mpi-sws.org/~mmarcon/Glasnost-NSDI.pdf">the glasnost team</a></p>
+						<p>This map was created by <a href="http://tentacleriot.eu">Michael
+						Bauer</a> using several datasources: Above mentioned <a
+						href="http://www.measurementlab.net/data">Data from measurementlab</a>,
+						<a href="http://www.team-cymru.org/Services/ip-to-asn.html">Team Cymrus Whois server for provider detection</a> and the <a href="http://www.maxmind.com/app/geolite">Geolite</a> database for geomapping IPs. Python and postgres is used for parsing, filtering and
+						analyzing the data. <a href="http://jvectormap.com/">jvectormap</a> is
+						used for visualization. More details on <a
+						href="https://github.com/mihi-tr/glasnost">github</a></p>
+						<p>This map wouldn't be possible if I didn't have support from these people:
+						Tom Lohninger, thanks for the initial push and feedback; Leonhard Preis,
+						thanks for the server resources (700Gig is a lot of data);</p>
+					</section>
+					<section id="about-data" class="aboutTab">
+						<h3>Data</h3>
+						<p>Data covers the period from <span id="period-begin"></span> to <span id="period-end"></span>.</p>
+						<p>All data produced and used in this project is licensed creative commons
+						zero (CC0) - this means do whatever you want with it - it's free. You can
+						download the current data used from the <a href="json/">json</a>
+						subdirectory.</p>
+					</section>
+				</div>
+			</div>
+	</div>
+
+	<div id="world-map-wrapper">
+
+		<div id="world-map"></div>
+	</div>
+	<div id="countryinfo-wrapper">
+		<div id="countryinfo">
+		<a href="#" id="countryinfo-close"
+        onclick='$("#countryinfo-wrapper").hide()'>x</a>
+			<h2 id="countrycode"></h2>
+			<table class='sortable' id='providertable'></table>
+		</div>
+	</div>
+
 </div>
 </body>
 </html>

@@ -106,27 +106,28 @@ function loaddata () {
         }
         
     $.get(url,function(data) {
+        var mapobject=$("#world-map").vectorMap("get","mapObject");
+        for (var i in mapobject.series.regions[0].values) {
+            var a={}
+            a[i]=0;
+            try {
+            mapobject.series.regions[0].setValues(a);
+            }
+            catch (err) {
+                console.log(a);
+                console.log("Error on resetting country "+i)
+                }
+            }
         datamap={};
         for (c in data) {
-            if (data[c].cc !="BB") {
+            if (! (data[c].cc in ["BB","A1","A2"])) {
                 datamap[data[c].cc]=data[c].percent+1; 
                 }
             }
-        $('#world-map').html("")            
-        $('#world-map').vectorMap({
-            map: 'world_mill_en',
-            series: {
-                regions: [{
-                    values: datamap,
-                    scale: colorscale,
-                    attribute: 'fill',
-                    min: 1,
-                    max: 101
-                }]
-                },
-            onRegionClick: function (e,str) { loadcountryinfo(str); }    
-            })
-            })
+        mapobject.series.regions[0].setValues(datamap);
+        /*$('#world-map').vectorMap("set","series",
+            ) */
+            }) 
             }
 
 function loadcountryinfo(cc) {
@@ -152,7 +153,23 @@ function loadcountryinfo(cc) {
         html.push("</tbody>")
         $("#providertable").html(html.join(""));
         $("#providertable").tablesorter([[4,0],[0,0]]);
+        $(".aboutTab").hide();
+        $("#countryinfo-wrapper").show();
         })
     }
 
-$(document).ready(function () { testlist(); scalebar(); period(); loaddata() })
+$(document).ready(function () { testlist(); scalebar(); period();
+        $('#world-map').vectorMap({
+            map: 'world_mill_en',
+            series: {regions: [{
+                    values: datamap,
+                    scale: colorscale,
+                    attribute: 'fill',
+                    min: 1,
+                    max: 101
+                }]
+                },
+            onRegionClick: function (e,str) { loadcountryinfo(str); }    
+            })
+         loaddata();   
+            })
