@@ -25,7 +25,7 @@ last_year=datetime.date(today.year-1,today.month,today.day)
 cur.execute("""delete from country_results;""")
 cur.execute("""insert into country_results select
 client_results.cc,client_results.test,count(id) as total,shaped.shaped,
-shaped.shaped::real/count(id)::real*100 from
+round(shaped.shaped/count(id)::numeric*100,2) from
 client_results left outer join (select cc,count(id) as shaped,test from
 client_results where rating < 0.5 group by cc,test) shaped on
 shaped.cc=client_results.cc and shaped.test=client_results.test where time>
@@ -38,7 +38,8 @@ Null;""")
 
 cur.execute("""delete from provider_results""");
 cur.execute("""insert into provider_results select owner, test, sum(total)
-as total, sum(shaped) as shaped,sum(shaped)::real/sum(total)::real*100 from asn inner join (select
+as total, sum(shaped) as
+shaped,round(sum(shaped)/sum(total)::numeric*100,2) from asn inner join (select
 client_results.asn, client_results.test, count(id) as total,
 shaped.shaped as shaped from client_results left outer join (select
 asn,test,count(id) as shaped from client_results where rating<0.5 group by
