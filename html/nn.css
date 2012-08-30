@@ -51,7 +51,7 @@ h1 {
 }
 
 #testselector {
-	background: rgba(255,255,255,0.2);
+	background: rgba(255,255,255,0.7);
 	padding:0.1em;
     border: none;
 	min-width:10em;
@@ -70,6 +70,48 @@ h1 {
 
 #world-map {
 	height:100%;
+}
+
+#scalebar-wrapper {
+	position:fixed;
+	bottom: 1em;
+	left: 2em;
+	z-index: 9;
+	display: inline-block;
+	font-size: 0.8em;
+}
+
+#scalebar {
+	display: inline-block;
+	box-shadow: rgba(0,0,0,1) 0 0 0.3em;
+}
+
+#scalebar span:first-child {
+	border-radius: 0.3em 0 0 0.3em;
+}
+
+#scalebar span:last-child {
+	border-radius: 0 0.3em 0.3em 0;
+}
+
+#scalebar span {
+	text-shadow: rgba(255,255,255,1) 0.1em 0.1em 0;
+	padding:0.1em;
+	min-width:3em;
+	text-align:center;
+	display: inline-block;
+}
+
+#scalebar-wrapper a.colorswitch {
+	margin-left:1em;
+	text-transform: uppercase;
+	background-color: rgba(220,220,220,0.9);
+	border-radius: 0.3em;
+	color: #000;
+	text-decoration:none;
+	font-weight: bold;
+	padding: 0.1em 0.4em;
+	box-shadow: rgba(0,0,0,1)  0 0 0.3em;
 }
 
 
