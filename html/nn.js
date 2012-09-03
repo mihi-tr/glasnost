@@ -2,8 +2,9 @@ var datamap={};
 
 var test="";
 
-//var colorscale=["#E7E1EF","#C994C7","#DD1C77"]
-var colorscale=["#e4f264","#8fd772","#48b581","#149084","#1d6a76","#2c4559"]
+var colorscales=[["#00FF00","#FFFF00","#FF0000"],["#e4f264","#8fd772","#48b581","#149084","#1d6a76","#2c4559"]];
+var cindex=1;
+var colorscale=colorscales[1];
 
 function hex_to_rgb(hx) {
     var c=parseInt(hx.replace("#",""),16);
@@ -13,6 +14,20 @@ function hex_to_rgb(hx) {
     return ([red,green,blue]);
     }
 
+function switch_colorscales() {
+    if (cindex<colorscales.length-1) {
+        cindex++;
+        }
+    else {
+        cindex=0;
+        }
+    colorscale=colorscales[cindex];  
+    var mapobject=$("#world-map").vectorMap("get","mapObject");
+    mapobject.series.regions[0].scale.scale=colorscale.map(hex_to_rgb);
+    loaddata();
+    scalebar();
+
+    }
 function number_length(n,l) {
     while (n.length<l) {
         n="0"+n
