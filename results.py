@@ -27,10 +27,10 @@ cur.execute("""insert into country_results select
 client_results.cc,client_results.test,count(id) as total,shaped.shaped,
 round(shaped.shaped/count(id)::numeric*100,2) from
 client_results left outer join (select cc,count(id) as shaped,test from
-client_results where rating < 0.5 group by cc,test) shaped on
+client_results where rating < 0.5 and time> '%s' group by cc,test) shaped on
 shaped.cc=client_results.cc and shaped.test=client_results.test where time>
 '%s' group by
-client_results.cc,shaped.shaped,client_results.test,shaped.test;"""%last_year)
+client_results.cc,shaped.shaped,client_results.test,shaped.test;"""%(last_year,last_year))
 cur.execute("""update country_results set shaped=0 where shaped is
 Null;""")
 cur.execute("""update country_results set percent_shaped=0 where percent_shaped is
@@ -42,12 +42,13 @@ as total, sum(shaped) as
 shaped,round(sum(shaped)/sum(total)::numeric*100,2), cc from asn inner join (select
 client_results.asn, client_results.test,client_results.cc, count(id) as total,
 shaped.shaped as shaped from client_results left outer join (select
-asn,test,count(id) as shaped,cc from client_results where rating<0.5 group by
+asn,test,count(id) as shaped,cc from client_results where rating<0.5 and
+client_results.time> '%s' group by
 asn,test,cc) as shaped on shaped.asn=client_results.asn and
 shaped.test=client_results.test and shaped.cc=client_results.cc where client_results.time > '%s'
 group by
 client_results.asn,client_results.test,shaped.shaped,client_results.cc) as r on r.asn=asn.asn
-group by asn.owner,r.test,cc;"""%last_year)
+group by asn.owner,r.test,cc;"""%(last_year,last_year))
 cur.execute("update provider_results set shaped=0, percent_shaped=0 where shaped is Null");
 
 sql.commit()
