@@ -5,15 +5,15 @@ body {
 	background-color: #f3f3f3;
 }
 
-
 h1 {
 	display: inline-block;
 	margin: 0;
-	padding:0.3em 0.2em 0.1em 1em;
+	padding:0.3em 0.2em 0 1em;
     color: rgba(255,255,255,1);
 	text-transform: uppercase;
 	text-shadow: rgba(0,0,0,1) 0 0 0.3em, rgba(0,0,0,1) 0 0 0.3em;
-	
+	letter-spacing:0.05em;
+	height:1.6em;
 }
 
 #page-wrapper {
@@ -22,10 +22,10 @@ h1 {
 }
 
 #headline {
+	position: fixed;
 	z-index:11;
-	position: absolute;
 	top:0;
-	min-height:3.5em;
+	height:3.5em;
 	width:100%;
 	margin:0 0 0 0;
 	box-shadow: rgba(0,0,0,0.7) 0 0 1em;
@@ -33,21 +33,24 @@ h1 {
 
 
 	/*Gradiant*/
-	background: rgb(14,14,14);
-	background: -moz-linear-gradient(top,  rgb(14,14,14) 21%, rgb(61,61,61) 99%);
-	background: -webkit-gradient(linear, left top, left bottom, color-stop(21%,rgb(14,14,14)), color-stop(99%,rgb(61,61,61)));
-	background: -webkit-linear-gradient(top,  rgb(14,14,14) 21%,rgb(61,61,61) 99%);
-	background: -o-linear-gradient(top,  rgb(14,14,14) 21%,rgb(61,61,61) 99%);
-	background: -ms-linear-gradient(top,  rgb(14,14,14) 21%,rgb(61,61,61) 99%);
-	background: linear-gradient(to bottom,  rgb(14,14,14) 21%,rgb(61,61,61) 99%);
-	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0e0e0e', endColorstr='#3d3d3d',GradientType=0 );
+	background: #222;
 
 }
+
+#selectbar-wrapper {
+	position:absolute;
+	z-index: 19;
+	left:2em;
+	top:1em;
+    color: rgba(255,255,255,1);
+}
+
 
 #selectbar {
 	display: inline-block;
 	margin-left:2em;
     color: rgba(255,255,255,1);
+	
 }
 
 #testselector {
@@ -115,34 +118,62 @@ h1 {
 }
 
 
-
-#about-wrapper {
-	width:27%;
-	max-width: 30em;
-	min-width: 20em;
-	display: block;
-	z-index: 11;
-	position:absolute;
+#nav-wrapper {
+	display: inline-block;
+	float: right;
 	right:0;
 	top:0;
 }
 
-#about {
-	background-color: rgba(255,255,255,0.93);
+.navTab {
+	background-color: rgba(255,255,255,0.95);
 	box-shadow: rgba(0,0,0,0.4) 0em 0.2em 0.2em ;
+	position:absolute;
+	font-size:1.1em;
+	line-height:1.3em;
 }
 
-.aboutTab {
+section#nav-share {
+	right: 0;
+	min-width:15em;
+}
+
+.menu {
+	padding: 0;
+}
+
+.menu ul {
+	margin: 0;
+	padding: 0;	
+	list-style-type:none;
+}
+
+.menu li {
+	padding: 0.6em 1em;
+	border-bottom: #aaa 1px solid;
+	cursor: pointer;
+}
+
+.menu li a {
+	color:inherit;
+	text-decoration: inherit;
+	display: block;
+}
+
+.menu li:hover {
+	background-color: #fff;
+}
+
+.description {
 	padding: 0.3em 1em 1em 1em;
 }
 
 
 .ui-tabs .ui-tabs-nav { 
-
-	margin: 0 0 2px 0; 
+	margin: 0 0 0 0; 
 	padding: 0 0 0 0; 
 	font-weight: bold; 
-	text-align:center;
+	text-align:right;
 	background: -moz-linear-gradient(top,  rgba(0,0,0,0.45) 0%, rgba(255,255,255,0.05) 100%);
 	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(0,0,0,0.45)), color-stop(100%,rgba(255,255,255,0.05)));
 	background: -webkit-linear-gradient(top,  rgba(0,0,0,0.45) 0%,rgba(255,255,255,0.05) 100%);
@@ -150,20 +181,41 @@ h1 {
 	background: -ms-linear-gradient(top,  rgba(0,0,0,0.45) 0%,rgba(255,255,255,0.05) 100%);
 	background: linear-gradient(to bottom,  rgba(0,0,0,0.45) 0%,rgba(255,255,255,0.05) 100%);
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#73000000', endColorstr='#0dffffff',GradientType=0 );
-
 }
 
-.ui-tabs .ui-tabs-nav li { list-style: none; display: inline-block; position: relative; margin: 0 0 0 0; border-bottom: 0 !important; padding: 0; white-space: nowrap; height:3.5em; }
-.ui-tabs .ui-tabs-nav li a { display: inline-block; padding: 1.1em 1em; text-decoration: none; color: #eee; }
+.ui-tabs .ui-tabs-nav li { 
+	list-style: none; 
+	display: inline-block; 
+	position: relative; 
+	margin: 0 0 0 0; 
+	border-bottom: 0 !important; 
+	padding: 0; 
+	white-space: nowrap; 
+	height:3.5em; 
+}
+
+.ui-tabs .ui-tabs-nav li a { 
+	display: table-cell; 
+	margin:0; 
+	padding: 0 1.2em; 
+	text-decoration: none; 
+	color: #f4f4f4; 
+	height:3.5em; 
+	vertical-align: middle;
+	font-size:1.1em;
+	border-left: 2px inset rgba(255,255,255,0.2);
+}
+
+.ui-tabs .ui-tabs-nav li:last-child  a{ 
+	padding-right:1.5em;
+}
 
 .ui-state-default:hover{	
-	background-color: rgba(255,255,255,0.3);
+	background-color: rgba(255,255,255,0.1);
 }
 
 
 .ui-tabs .ui-tabs-hide { display: none !important; }
-
-
 
 #countryinfo {
 }
@@ -239,4 +291,41 @@ a#countryinfo-close {
 	height: 1.3em;
 	width:1.3em;
 	text-align:center;
+}
+
+#countryinfo table {
+	margin-top: 4.2em;
+	max-width:50em;
+	font-size:0.9em;
+}
+
+#countryinfo th {
+    text-align: left;
+	background-color: rgba(0,0,0,0.9);
+	color: white;
+	cursor: pointer;
+	padding:0.4em;
+}
+
+#countryinfo td:first-child {
+	max-width:30em;
+}
+
+#countryinfo td:nth-child(2) {
+	max-width:2em;
+}
+
+#countryinfo td:last-child {
+	max-width:1em;
+	text-shadow: rgba(255,255,255,1) 0.1em 0.1em 0;
+}	
+	
+#countryinfo td {
+    margin: 0;
+	background-color: rgba(0,0,0,0.1);
+	padding: 0.3em 0.4em;
+}
+	
+#countryinfo tbody tr:nth-child(2n+2)  td {
+	background-color: rgba(0,0,0,0.03);
 }

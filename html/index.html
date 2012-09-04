@@ -2,6 +2,7 @@
 <html>
 <head>
 	<title>How neutral is the net?</title>
+	<link rel="icon" type="image/png" href="images/favicon.png">
 	<link rel="stylesheet" href="jquery-jvectormap-1.0.css" type="text/css" media="screen"/>
 	<link rel="stylesheet" href="nn.css" type="text/css" media="screen"/>
 	<script src="jquery.js"></script>
@@ -9,48 +10,27 @@
 	<script src="jquery-jvectormap-world-mill-en.js"></script>
 	<script src="jquery.tablesorter.min.js"></script>
 	<script src="nn.js"></script>
-
 	<script src="jquery-ui-1.8.23.custom.min.js"></script>
-	<script>
-		$(function() {
-			$( "#about-wrapper" ).tabs({
-				collapsible: true,
-				fx: { opacity: 'toggle' }
-				}
-				
-			);
-		});
+	<meta property="og:image" content="http://netneutralitymap.org/images/link-preview.jpg">
 
-		$("#countryinfo-close").click(function() {
-			$("#countryinfo-wrapper").fadeToggle("fast");
-		});
-
-		$('#countryinfo-wrapper')
-			.resizeable();
-		
-	</script>
 
 </head>
+
 <body>
 <div id="page-wrapper">
 	<div id="headline">
-		<h1>How neutral is the net?</h1>
-			<div id="selectbar">
-				Select test
-				<select id="testselector" onmouseup="selecttest()">
-					<option selected value="">All</option>
-				</select>
-			</div>
-			<div id="about-wrapper">
+			<h1>How <span style="color:#00ffc0;">neutral</span> is the <span style="color:#00ffc0;">net</span>?</h1>
+
+			<div id="nav-wrapper">
 				<ul>
-					<li><a href="#about-netneutrality">Netneutrality</a></li><li><a href="#about-thisMap">This Map</a></li><li><a href="#about-data">Data</a></li>
+					<li><a href="#nav-netneutrality">Net Neutrality</a></li><li><a href="#nav-thisMap">This Map</a></li><li><a href="#nav-data">Data</a></li><li><a href="#nav-share"><img src="images/share.png" style="height:22px" /></a></li>
 				</ul>
-				<div id="about">
-					<section id="about-netneutrality" class="aboutTab">
-						<h3>Netneutrality</h3>
-						<p>Netneutrality is the principle that all data on the internet is transported using best effort. This includes not discriminating for origin and service. Netneutrality and whether legal obligations for providers need to exist to obey it is currently under debate in Europe and the US. The european commission frequently stated the need for data on Violations of Netneutrality - this data exists. </p>
+				<div id="about">					
+					<section id="nav-netneutrality" class="navTab description">	
+						<h3>Net Neutrality</h3>
+						<p>Net Neutrality is the principle that all data on the internet is transported using best effort. This includes not discriminating for origin and service. Netneutrality and whether legal obligations for providers need to exist to obey it is currently under debate in Europe and the US. The european commission frequently stated the need for data on Violations of Netneutrality - this data exists. </p>
 					</section>
-					<section id="about-thisMap" class="aboutTab">
+					<section id="nav-thisMap" class="navTab description">
 						<h3>This Map</h3>
 						<p>This map shows data from <a href="http://www.measurementlab.net/measurement-lab-tools#tool2">Glasnost</a>,
 						one of the measurementlab tools for examining your interent connection. We map the percentage of tests where violations of netneutrality was discovered worldwide. The metric to determine violations is the one previously used by <a
@@ -59,17 +39,33 @@
 						<a href="http://www.team-cymru.org/Services/ip-to-asn.html">Team Cymrus Whois server for provider detection</a> and the <a href="http://www.maxmind.com/app/geolite">Geolite</a> database for geomapping IPs. Python and postgres is used for parsing, filtering and analyzing the data. <a href="http://jvectormap.com/">jvectormap</a> is used for visualization. More details on <a href="https://github.com/mihi-tr/glasnost">github</a></p>
 						<p>This map wouldn't be possible if I didn't have support from these people: <a href="http://socialhack.eu">Thomas Lohninger</a>, thanks for the initial push and feedback; Leonhard Preis and <a href="http://netzfreiheit.org">"Initiative f&uuml;r Netzfreiheit"</a> thanks for the server resources (700Gig is a lot of data); Andreas Demmelbauer, thanks for the design overhaul.</p>
 					</section>
-					<section id="about-data" class="aboutTab">
+					<section id="nav-data" class="navTab description">
 						<h3>Data</h3>
 						<p>Data covers the period from <span id="period-begin"></span> to <span id="period-end"></span>.</p>
 						<p>All data produced and used in this project is licensed creative commons zero (CC0) - this means do whatever you want with it - it's free. You can download the current data used from the <a href="json/">json</a> subdirectory.</p>
                         <p>Percent shaping detected</p>
+					</section>
+					<section id="nav-share" class="navTab menu">	
+						<ul>
+							<li><a href="mailto:?Subject=Net%20Neutrality%20Map&Body=Check%20this%20out%3A%0Ahttp%3A//netneutralitymap.org">E-Mail</a></li>
+							<li><a href="#" onclick="window.open('https://www.facebook.com/share.php?u=http://netneutralitymap.org','Share on Facebook','width=800,height=500,left=100,top=100,screenX=100,screenY=100')">Facebook</a></li>
+							<li><a  href="#" onclick="window.open('https://twitter.com/intent/tweet?text=How%20neutral%20is%20the%20Net?%20http://netneutralitymap.org','Tweet','width=800,height=500,left=100,top=100,screenX=100,screenY=100')">Twitter</a></li>
+						</ul>
 					</section>
 				</div>
 			</div>
 	</div>
 
 	<div id="world-map-wrapper">
+
+		<div id="selectbar-wrapper">	
+			<div id="selectbar">
+				Select test
+				<select id="testselector" onmouseup="selecttest()">
+					<option selected value="">All</option>
+				</select>
+			</div>
+		</div>
 
 		<div id="world-map"></div>
 	</div>
@@ -87,5 +83,21 @@
 		</div>
 	</div>
 </div>
+
+<!-- Piwik -->
+ <script type="text/javascript">
+ var pkBaseURL = "https://piwik.netzfreiheit.org/";
+ document.write(unescape("%3Cscript src='" + pkBaseURL + "piwik.js' type='text/javascript'%3E%3C/script%3E"));
+ </script><script type="text/javascript">
+ try {
+ var piwikTracker = Piwik.getTracker(pkBaseURL + "piwik.php", 7);
+ piwikTracker.trackPageView();
+ piwikTracker.enableLinkTracking();
+ } catch( err ) {}
+ </script><noscript><p><img src="https://piwik.netzfreiheit.org/piwik.php?idsite=7" style="border:0" alt="" /></p></noscript>
+ <!-- End Piwik Tracking Code --> 
+
 </body>
 </html>
+
+

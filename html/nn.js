@@ -154,7 +154,7 @@ function loadcountryinfo(cc) {
         html.push("</tbody>")
         $("#providertable").html(html.join(""));
         $("#providertable").tablesorter([[4,0],[0,0]]);
-        $(".aboutTab").hide();
+        $(".navTab").hide();
         $("#countryinfo-wrapper").show();
         })
     }
@@ -174,3 +174,15 @@ $(document).ready(function () { testlist(); scalebar(); period();
             })
          loaddata();   
             })
+			
+$(function() {
+		$( "#nav-wrapper" ).tabs({
+			collapsible: true,
+			fx: { opacity: 'toggle' }
+		});
+	});
+
+$("#countryinfo-close").click(function() {
+		$("#countryinfo-wrapper").fadeToggle("fast");
+	});
+			
